@@ -1,0 +1,34 @@
+@media (max-width: 915px) {
+  .header__bottom-list > li + li {
+    margin-left: 10px;
+  }
+  .header__bottom-list a {
+    font-size: 13px;
+  }
+  .notification-top {
+    margin-left: 10px;
+  }
+  .header__bottom-search input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__top-inner {
+    height: 61px;
+    min-height: 100%;
+  }
+  .header__top-logo {
+    width: 150px;
+    height: 35px;
+  }
+  .header__top-link {
+    font-size: 12px;
+    line-height: 30px;
+  }
+.author-top.desktop,
+.notification-top.desktop,
+.header__top-btn.desktop {
+    display: none;
+  }
+}
