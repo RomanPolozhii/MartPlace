@@ -26,9 +26,21 @@
     font-size: 12px;
     line-height: 30px;
   }
-.author-top.desktop,
-.notification-top.desktop,
-.header__top-btn.desktop {
+  .author-top.desktop,
+  .notification-top.desktop,
+  .header__top-btn.desktop {
     display: none;
   }
+  .header__bottom-menu {
+    visibility: hidden;
+  }
+  .user__btn,
+  .header .menuToggle
+  {
+    display: block;
+  }
+  .header .menuToggle{
+    opacity: 1;
+  }
+
 }
