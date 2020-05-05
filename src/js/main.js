@@ -67,9 +67,9 @@ $(function () {
 
     var accordion = new Accordion($(".accordion-menu"), false);
   });
-  $(".slider-marketplace").slick({
+  $(".marketplace__slider").slick({
     arrows:false,
-/*     autoplay:true,
-    autoplaySpeed:5000, */
+    autoplay:true,
+    autoplaySpeed:5000,
   });
 });

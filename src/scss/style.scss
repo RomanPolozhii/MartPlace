@@ -13,13 +13,13 @@
 @import "header";
 //MARKETPLACE==================================================================================================
 .marketplace {
+  margin-bottom: 186px;
 }
 .marketplace__inner {
+  max-height: 726px;
+  height: 100%;
 }
-.marketplace__slider {
-}
-.marketplace__item {
-}
+
 .marketplace__img {
   position: relative;
   height: 726px;
@@ -72,6 +72,74 @@
     }
   }
 }
+
+//SERVICES==================================================================================================
+.services {
+  // .services__inner
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    margin: 0 -20px;
+  }
+
+  // .services__seartch
+
+  &__seartch {
+  }
+
+  // .services__column
+
+  &__column {
+    padding: 0 20px;
+  }
+
+  // .services__item
+
+  &__item {
+    padding:45px 23px;
+    text-align: center;
+    &:hover{
+      border-radius: 4px;
+      box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  // .services__img
+
+  &__img {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .services__title
+
+  &__title {
+    color: #010101;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  // .services__text
+
+  &__text {
+    color: #555555;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    END CODE
