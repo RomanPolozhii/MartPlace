@@ -36,7 +36,7 @@ $(function () {
       var dropdownlink = this.el.find(".dropdownlink");
       dropdownlink.on(
         "click",
-        { el: this.el, multiple: this.multiple },
+        {el: this.el, multiple: this.multiple},
         this.dropdown
       );
     };
@@ -66,5 +66,10 @@ $(function () {
     });
 
     var accordion = new Accordion($(".accordion-menu"), false);
+  });
+  $(".slider-marketplace").slick({
+    arrows:false,
+/*     autoplay:true,
+    autoplaySpeed:5000, */
   });
 });

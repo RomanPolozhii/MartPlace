@@ -960,6 +960,7 @@
   .header__bottom-link {
     display: block;
     position: relative;
+    z-index: 5;
     &:hover {
       .header__bottom-home,
       .header__bottom-all,
