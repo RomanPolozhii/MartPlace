@@ -34,13 +34,13 @@
   .header__bottom-menu {
     visibility: hidden;
   }
-  .user__btn,
-  .header .menuToggle
-  {
+  .user__btn {
     display: block;
   }
-  .header .menuToggle{
+  .header .menuToggle {
     opacity: 1;
+    z-index: 3;
+    visibility: visible;
   }
 
 }

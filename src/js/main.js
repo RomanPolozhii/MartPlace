@@ -61,6 +61,10 @@ $(function () {
       }
     };
 
+    $(".menuToggle").click(function () {
+      $(".accordion-menu").toggleClass("active");
+    });
+
     var accordion = new Accordion($(".accordion-menu"), false);
   });
 });

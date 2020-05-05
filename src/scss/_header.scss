@@ -784,7 +784,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-opacity: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+
   }
 
   .menuToggle input {
@@ -833,7 +836,7 @@ opacity: 0;
   .accordion-menu {
     position: fixed;
     top: 2px;
-    left: 0;
+    left: -120%;
     width: 100%;
     max-width: 320px;
     height: 100%;
@@ -846,9 +849,13 @@ opacity: 0;
     border-radius: 0 0 3px 3px;
     background-color: #fff;
     overflow-y: auto;
-    opacity: 0;
-    visibility: hidden;
+    transition: all 0.3s;
   }
+  .accordion-menu.active {
+    left: 0;
+  }
+
+
   .accordion-menu li.open .dropdownlink {
     color: #000000;
     .fa-chevron-down {
@@ -861,7 +868,7 @@ opacity: 0;
   .dropdownlink {
     cursor: pointer;
     display: block;
-    padding: 15px 15px 15px 45px;
+    padding: 15px 15px 15px 90px;
     font-size: 15px;
     font-family: Quicksand, sans-serif;
     font-weight: 500;
@@ -1047,7 +1054,7 @@ opacity: 0;
       padding-bottom: 18px;
       border-bottom: 1px solid #e8ebf0;
       color: #000000;
-      font-size: 16px;
+                font-size: 16px;
       font-family: Quicksand, sans-serif;
       font-weight: 500;
     }
@@ -1119,3 +1126,5 @@ opacity: 0;
     line-height: 30px;
   }
 }
+
+
