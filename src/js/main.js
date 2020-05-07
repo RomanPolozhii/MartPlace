@@ -83,4 +83,7 @@ $(function () {
   $(".slider-feature").slick({
     appendArrows:$(".feature__title")
   });
+
+  $('input, select').styler();
+
 });
