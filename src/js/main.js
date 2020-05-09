@@ -72,7 +72,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 5000,
   });
-  $("#rateYo").rateYo({
+  $(".rateYo").rateYo({
     starWidth: "15px",
     normalFill: "#fff",
     readOnly: true,
