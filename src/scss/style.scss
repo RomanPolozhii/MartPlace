@@ -137,6 +137,91 @@
         font-weight: 400;
       }
     }
+
+    button {
+      color: #ffffff;
+      font-family: Quicksand;
+      font-size: 16px;
+      font-weight: 400;
+      border: none;
+      background-color: #0674ec;
+      border-radius: 4px;
+      height: 55px;
+      padding: 0 67px;
+      margin-left: 24px;
+    }
+
+    .jq-selectbox__select {
+      position: relative;
+      top: 3px;
+      left: -4px;
+      border: 1px solid #dcdcdc;
+      border-radius: 0 4px 4px 0;
+      border-left: none;
+      padding: 20px 70px 20px 20px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        background-image: url(../img/icon/chevron-down.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 13px;
+        height: 8px;
+      }
+    }
+
+    .jq-selectbox__select.opened {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        background-image: url(../img/icon/chevron-down.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg);
+        background-size: cover;
+        width: 13px;
+        height: 8px;
+      }
+    }
+
+    .jq-selectbox__select-text {
+      /* position: relative; */
+      color: #555555;
+      font-family: Quicksand;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .jq-selectbox__dropdown {
+      position: absolute;
+      top: 63px;
+      left: -5px;
+      z-index: 2;
+      cursor: pointer;
+      box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+      border-radius: 0 0 3px 3px;
+      background-color: #ffffff;
+      border-top: 1px solid $blue;
+      transition: all 0.4s;
+      color: #676767;
+      font-family: "Linearicons - Free";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 42px;
+      width: 230px;
+      & li {
+        padding: 0 20px;
+      }
+      & li:hover {
+        color: white;
+        background-color: $blue;
+      }
+    }
   }
 
   // .services__column
