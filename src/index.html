@@ -74,10 +74,12 @@
         <div class="services__inner">
           <div class="services__seartch">
             <form action="#">
-              <input type="text" placeholder="Search your products...">
-              <select>
+              <input type="text" placeholder="Search your products..." />
+              <select class="dropdown-filter">
                 <option value="All Categories">All Categories</option>
-                <option value="WordpressJoomla Template">WordpressJoomla Template</option>
+                <option value="WordpressJoomla Template"
+                  >WordpressJoomla Template</option
+                >
                 <option value="Landing Page">Landing Page</option>
                 <option value="Psd Template">Psd Template</option>
                 <option value="Plugins">Plugins</option>
@@ -298,6 +300,65 @@
       </div>
     </section>
     <!-- /.feature -->
+    <!-- Products -->
+    <section class="products">
+      <div class="container">
+        <div class="products__title">
+          <div class="products__text">Newest Release Products</div>
+          <div class="products__filter filter__product">
+            Filter by:
+            <ul class="filter__product-list">
+              <li><a class="filter__product-link" href="#">Plugins</a></li>
+              <li><a class="filter__product-link" href="#">WordPress</a></li>
+              <li>
+                <a class="filter__product-link" href="#">Site Template</a>
+              </li>
+              <li><a class="filter__product-link" href="#">PSD Template</a></li>
+              <li><a class="filter__product-link" href="#">Joomla</a></li>
+              <li>
+                <a class="filter__product-link" href="#">User Interface</a>
+              </li>
+              <li><a class="filter__product-link" href="#">Landing Page</a></li>
+              <li><a class="filter__product-link" href="#">Software</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products__category">
+          <menu class="products__list">
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">WordPress</a></li>
+            <li><a href="#">Site Template</a></li>
+            <li><a href="#">PSD Template</a></li>
+            <li><a href="#">Joomla</a></li>
+            <li><a href="#">User Interface</a></li>
+            <li><a href="#">Landing Page</a></li>
+            <li><a href="#">Software</a></li>
+          </menu>
+        </div>
+        <div class="products__inner">
+          <div class="products__column">
+            <div class="products__item">
+              <div class="products__img"></div>
+              <div class="products__top-info">
+                <div class="products__title"></div>
+                <div class="products__link">
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+                <div class="products__text">
+                  <p>
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet congue.¸
+                  </p>
+                </div>
+              </div>
+              <div class="products__bottom-info"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.products -->
     <!-- STOP WRITE CODE -->
     @@include('components/_footer.html') @@include('components/_scripts.html')
   </body>

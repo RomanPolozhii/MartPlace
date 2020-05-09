@@ -89,4 +89,8 @@ $(function () {
   $(".jq-selectbox__select").click(function () {
     $(".jq-selectbox__select").toggleClass("opened");
   });
+
+  $(".filter__product").click(function () {
+    $(".filter__product,.filter__product-list").toggleClass("active");
+  });
 });
