@@ -790,7 +790,7 @@
     <!-- FEATURE -->
     <section class="feature">
       <div class="container">
-        <div class="feature__title">
+        <div class="feature__title title">
           Weekly Featured Products
         </div>
         <div class="feature__slider slider-feature">
@@ -956,35 +956,101 @@
           <div class="products__filter filter__product">
             Filter by:
             <ul class="filter__product-list">
-              <li><a class="filter__product-link" href="#">Plugins</a></li>
-              <li><a class="filter__product-link" href="#">WordPress</a></li>
               <li>
-                <a class="filter__product-link" href="#">Site Template</a>
+                <a class="filter__product-link" data-filter="all" href="#"
+                  >Plugins</a
+                >
               </li>
-              <li><a class="filter__product-link" href="#">PSD Template</a></li>
-              <li><a class="filter__product-link" href="#">Joomla</a></li>
               <li>
-                <a class="filter__product-link" href="#">User Interface</a>
+                <a
+                  class="filter__product-link"
+                  data-filter=".category-wordpress"
+                  href="#"
+                  >WordPress</a
+                >
               </li>
-              <li><a class="filter__product-link" href="#">Landing Page</a></li>
-              <li><a class="filter__product-link" href="#">Software</a></li>
+              <li>
+                <a
+                  class="filter__product-link"
+                  data-filter=".category-sitetemplate"
+                  href="#"
+                  >Site Template</a
+                >
+              </li>
+              <li>
+                <a
+                  class="filter__product-link"
+                  data-filter=".category-psdtemplate"
+                  href="#"
+                  >PSD Template</a
+                >
+              </li>
+              <li>
+                <a
+                  class="filter__product-link"
+                  data-filter=".category-joomla"
+                  href="#"
+                  >Joomla</a
+                >
+              </li>
+              <li>
+                <a
+                  class="filter__product-link"
+                  data-filter=".category-userinterface"
+                  href="#"
+                  >User Interface</a
+                >
+              </li>
+              <li>
+                <a
+                  class="filter__product-link"
+                  data-filter=".category-landingpage"
+                  href="#"
+                  >Landing Page</a
+                >
+              </li>
+              <li>
+                <a
+                  class="filter__product-link"
+                  data-filter=".category-software"
+                  href="#"
+                  >Software</a
+                >
+              </li>
             </ul>
           </div>
         </div>
         <div class="products__category">
-          <menu class="products__list">
-            <li><a href="#">Plugins</a></li>
-            <li><a href="#">WordPress</a></li>
-            <li><a href="#">Site Template</a></li>
-            <li><a href="#">PSD Template</a></li>
-            <li><a href="#">Joomla</a></li>
-            <li><a href="#">User Interface</a></li>
-            <li><a href="#">Landing Page</a></li>
-            <li><a href="#">Software</a></li>
-          </menu>
+          <div class="products__list">
+            <button type="button" data-filter="all">Plugins</button>
+            <button type="button" data-filter=".category-wordpress">
+              WordPress
+            </button>
+            <button type="button" data-filter=".category-sitetemplate">
+              Site Template
+            </button>
+            <button type="button" data-filter=".category-psdtemplate">
+              PSD Template
+            </button>
+            <button type="button" data-filter=".category-joomla">
+              Joomla
+            </button>
+            <button type="button" data-filter=".category-userinterface">
+              User Interface
+            </button>
+            <button type="button" data-filter=".category-landingpage">
+              Landing Page
+            </button>
+            <button type="button" data-filter=".category-software">
+              Software
+            </button>
+          </div>
         </div>
         <div class="products__inner inner__products">
-          <div class="inner__products-column">
+          <div
+            class="inner__products-column mix category-wordpress"
+            data-order="1"
+          >
             <div class="inner__products-item">
               <div class="inner__products-img ibg">
                 <img src="img/content/product-1.jpg" alt="" />
@@ -1000,8 +1066,11 @@
                   </div>
                   <div class="inner__products-link">
                     <a class="inner__products-name" href="#">
-                      <img src="img/icon/Ellipse_6.jpg" alt="" />Theme-Valley</a>
-                    <a class="inner__products-cms" href="#"><img src="img/icon/wordpress.png" alt="" /> Plugin</a>
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />Theme-Valley</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/wordpress.png" alt="" /> Plugin</a
+                    >
                   </div>
                   <div class="inner__products-text">
                     <p>
@@ -1015,13 +1084,17 @@
                   <div class="inner__products-price">
                     $20
                   </div>
-                  <a class="inner__products-heart" href="#"><span class="lnr lnr-heart"></span>90</a>
-                  <a class="inner__products-cart" href="#"><span class="lnr lnr-cart"></span>246</a>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="inner__products-column">
+          <div class="inner__products-column mix category-psd" data-order="2">
             <div class="inner__products-item">
               <div class="inner__products-img ibg">
                 <img src="img/content/product-2.jpg" alt="" />
@@ -1037,8 +1110,11 @@
                   </div>
                   <div class="inner__products-link">
                     <a class="inner__products-name" href="#">
-                      <img src="img/icon/Ellipse_6.jpg" alt="" />EchoTheme</a>
-                    <a class="inner__products-cms" href="#"><img src="img/icon/psd.png" alt="" /> PSD</a>
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />EchoTheme</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/psd.png" alt="" /> PSD</a
+                    >
                   </div>
                   <div class="inner__products-text">
                     <p>
@@ -1052,13 +1128,20 @@
                   <div class="inner__products-price">
                     $20
                   </div>
-                  <a class="inner__products-heart" href="#"><span class="lnr lnr-heart"></span>90</a>
-                  <a class="inner__products-cart" href="#"><span class="lnr lnr-cart"></span>246</a>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="inner__products-column">
+          <div
+            class="inner__products-column mix category-sitetemplate"
+            data-order="3"
+          >
             <div class="inner__products-item">
               <div class="inner__products-img ibg">
                 <img src="img/content/product-3.png" alt="" />
@@ -1074,8 +1157,11 @@
                   </div>
                   <div class="inner__products-link">
                     <a class="inner__products-name" href="#">
-                      <img src="img/icon/Ellipse_6.jpg" alt="" />Artcorner</a>
-                    <a class="inner__products-cms" href="#"><img src="img/icon/html.png" alt="" /> HTML</a>
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />Artcorner</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/html.png" alt="" /> HTML</a
+                    >
                   </div>
                   <div class="inner__products-text">
                     <p>
@@ -1089,16 +1175,23 @@
                   <div class="inner__products-price">
                     $20
                   </div>
-                  <a class="inner__products-heart" href="#"><span class="lnr lnr-heart"></span>90</a>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
                   <div class="inner__products__reviews">
                     <div class="rateYo" data-rateyo-rating="4.5"></div>
                   </div>
-                  <a class="inner__products-cart" href="#"><span class="lnr lnr-cart"></span>246</a>
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="inner__products-column">
+          <div
+            class="inner__products-column mix category-wordpress"
+            data-order="1"
+          >
             <div class="inner__products-item">
               <div class="inner__products-img ibg">
                 <img src="img/content/product-3.png" alt="" />
@@ -1114,8 +1207,11 @@
                   </div>
                   <div class="inner__products-link">
                     <a class="inner__products-name" href="#">
-                      <img src="img/icon/Ellipse_6.jpg" alt="" />Design-Hub</a>
-                    <a class="inner__products-cms" href="#"><img src="img/icon/wordpress.png" alt="" /> Plugin</a>
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />Design-Hub</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/wordpress.png" alt="" /> Plugin</a
+                    >
                   </div>
                   <div class="inner__products-text">
                     <p>
@@ -1129,16 +1225,20 @@
                   <div class="inner__products-price">
                     $20
                   </div>
-                  <a class="inner__products-heart" href="#"><span class="lnr lnr-heart"></span>90</a>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
                   <div class="inner__products__reviews">
                     <div class="rateYo" data-rateyo-rating="4.5"></div>
                   </div>
-                  <a class="inner__products-cart" href="#"><span class="lnr lnr-cart"></span>246</a>
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="inner__products-column">
+          <div class="inner__products-column mix category-psd" data-order="2">
             <div class="inner__products-item">
               <div class="inner__products-img ibg">
                 <img src="img/content/product-2.jpg" alt="" />
@@ -1154,8 +1254,11 @@
                   </div>
                   <div class="inner__products-link">
                     <a class="inner__products-name" href="#">
-                      <img src="img/icon/Ellipse_6.jpg" alt="" />AazzTech</a>
-                    <a class="inner__products-cms" href="#"><img src="img/icon/psd.png" alt="" /> PSD</a>
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />AazzTech</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/psd.png" alt="" /> PSD</a
+                    >
                   </div>
                   <div class="inner__products-text">
                     <p>
@@ -1169,13 +1272,20 @@
                   <div class="inner__products-price">
                     $20
                   </div>
-                  <a class="inner__products-heart" href="#"><span class="lnr lnr-heart"></span>90</a>
-                  <a class="inner__products-cart" href="#"><span class="lnr lnr-cart"></span>246</a>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="inner__products-column">
+          <div
+            class="inner__products-column mix category-sitetemplate"
+            data-order="3"
+          >
             <div class="inner__products-item">
               <div class="inner__products-img ibg">
                 <img src="img/content/product-1.jpg" alt="" />
@@ -1191,8 +1301,11 @@
                   </div>
                   <div class="inner__products-link">
                     <a class="inner__products-name" href="#">
-                      <img src="img/icon/Ellipse_6.jpg" alt="" />Theme-Valley</a>
-                    <a class="inner__products-cms" href="#"><img src="img/icon/wordpress.png" alt="" /> Plugin</a>
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />Theme-Valley</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/wordpress.png" alt="" /> Plugin</a
+                    >
                   </div>
                   <div class="inner__products-text">
                     <p>
@@ -1206,11 +1319,297 @@
                   <div class="inner__products-price">
                     $20
                   </div>
-                  <a class="inner__products-heart" href="#"><span class="lnr lnr-heart"></span>90</a>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
                   <div class="inner__products__reviews">
                     <div class="rateYo" data-rateyo-rating="4.5"></div>
                   </div>
-                  <a class="inner__products-cart" href="#"><span class="lnr lnr-cart"></span>246</a>
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="inner__products-all" href="#">All New Products</a>
+      </div>
+    </section>
+    <!-- /.products -->
+    <!-- Followers -->
+    <section class="followers">
+      <div class="container">
+        <div class="followers__title title">
+          Your Followers Feed
+        </div>
+        <div class="followers__slider slider-followers">
+          <div class="followers__products-column">
+            <div class="inner__products-item">
+              <div class="inner__products-img ibg">
+                <img src="img/content/product-1.jpg" alt="" />
+                <div class="inner__products-img-buttons">
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="inner__products-content">
+                <div class="inner__products-top-info">
+                  <div class="inner__products-title">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="inner__products-link">
+                    <a class="inner__products-name" href="#">
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />Theme-Valley</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/wordpress.png" alt="" /> Plugin</a
+                    >
+                  </div>
+                  <div class="inner__products-text">
+                    <p>
+                      Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut scelerisque the mattis, leo quam
+                      aliquet congue.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner__products-bottom-info">
+                  <div class="inner__products-price">
+                    $20
+                  </div>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="followers__products-column">
+            <div class="inner__products-item">
+              <div class="inner__products-img ibg">
+                <img src="img/content/product-2.jpg" alt="" />
+                <div class="inner__products-img-buttons">
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="inner__products-content">
+                <div class="inner__products-top-info">
+                  <div class="inner__products-title">
+                    Marketify Coffee Shop
+                  </div>
+                  <div class="inner__products-link">
+                    <a class="inner__products-name" href="#">
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />EchoTheme</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/psd.png" alt="" /> PSD</a
+                    >
+                  </div>
+                  <div class="inner__products-text">
+                    <p>
+                      Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut scelerisque the mattis, leo quam
+                      aliquet congue.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner__products-bottom-info">
+                  <div class="inner__products-price">
+                    $20
+                  </div>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="followers__products-column">
+            <div class="inner__products-item">
+              <div class="inner__products-img ibg">
+                <img src="img/content/product-3.png" alt="" />
+                <div class="inner__products-img-buttons">
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="inner__products-content">
+                <div class="inner__products-top-info">
+                  <div class="inner__products-title">
+                    Bryson - Portfolio Template
+                  </div>
+                  <div class="inner__products-link">
+                    <a class="inner__products-name" href="#">
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />Artcorner</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/html.png" alt="" /> HTML</a
+                    >
+                  </div>
+                  <div class="inner__products-text">
+                    <p>
+                      Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut scelerisque the mattis, leo quam
+                      aliquet congue.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner__products-bottom-info">
+                  <div class="inner__products-price">
+                    $20
+                  </div>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <div class="inner__products__reviews">
+                    <div class="rateYo" data-rateyo-rating="4.5"></div>
+                  </div>
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="followers__products-column">
+            <div class="inner__products-item">
+              <div class="inner__products-img ibg">
+                <img src="img/content/product-1.jpg" alt="" />
+                <div class="inner__products-img-buttons">
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="inner__products-content">
+                <div class="inner__products-top-info">
+                  <div class="inner__products-title">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="inner__products-link">
+                    <a class="inner__products-name" href="#">
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />Theme-Valley</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/wordpress.png" alt="" /> Plugin</a
+                    >
+                  </div>
+                  <div class="inner__products-text">
+                    <p>
+                      Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut scelerisque the mattis, leo quam
+                      aliquet congue.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner__products-bottom-info">
+                  <div class="inner__products-price">
+                    $20
+                  </div>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="followers__products-column">
+            <div class="inner__products-item">
+              <div class="inner__products-img ibg">
+                <img src="img/content/product-2.jpg" alt="" />
+                <div class="inner__products-img-buttons">
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="inner__products-content">
+                <div class="inner__products-top-info">
+                  <div class="inner__products-title">
+                    Marketify Coffee Shop
+                  </div>
+                  <div class="inner__products-link">
+                    <a class="inner__products-name" href="#">
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />EchoTheme</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/psd.png" alt="" /> PSD</a
+                    >
+                  </div>
+                  <div class="inner__products-text">
+                    <p>
+                      Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut scelerisque the mattis, leo quam
+                      aliquet congue.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner__products-bottom-info">
+                  <div class="inner__products-price">
+                    $20
+                  </div>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="followers__products-column">
+            <div class="inner__products-item">
+              <div class="inner__products-img ibg">
+                <img src="img/content/product-3.png" alt="" />
+                <div class="inner__products-img-buttons">
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="inner__products-content">
+                <div class="inner__products-top-info">
+                  <div class="inner__products-title">
+                    Bryson - Portfolio Template
+                  </div>
+                  <div class="inner__products-link">
+                    <a class="inner__products-name" href="#">
+                      <img src="img/icon/Ellipse_6.jpg" alt="" />Artcorner</a
+                    >
+                    <a class="inner__products-cms" href="#"
+                      ><img src="img/icon/html.png" alt="" /> HTML</a
+                    >
+                  </div>
+                  <div class="inner__products-text">
+                    <p>
+                      Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut scelerisque the mattis, leo quam
+                      aliquet congue.
+                    </p>
+                  </div>
+                </div>
+                <div class="inner__products-bottom-info">
+                  <div class="inner__products-price">
+                    $20
+                  </div>
+                  <a class="inner__products-heart" href="#"
+                    ><span class="lnr lnr-heart"></span>90</a
+                  >
+                  <div class="inner__products__reviews">
+                    <div class="rateYo" data-rateyo-rating="4.5"></div>
+                  </div>
+                  <a class="inner__products-cart" href="#"
+                    ><span class="lnr lnr-cart"></span>246</a
+                  >
                 </div>
               </div>
             </div>
@@ -1218,7 +1617,7 @@
         </div>
       </div>
     </section>
-    <!-- /.products -->
+    <!-- /Followers -->
     <!-- STOP WRITE CODE -->
     <footer>
   

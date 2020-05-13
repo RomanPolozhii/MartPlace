@@ -283,14 +283,6 @@
   // .feature__title
 
   &__title {
-    position: relative;
-    color: #000000;
-    font-family: Quicksand;
-    font-size: 30px;
-    font-weight: 400;
-    padding: 40px 29px;
-    background-color: white;
-    margin-bottom: 50px;
   }
 
   .slick-arrow {
@@ -324,11 +316,18 @@
     right: 30px;
     border-radius: 0 23px 23px 0;
   }
+}
 
-  // .feature__slider
-
-  &__slider {
-  }
+.title {
+  position: relative;
+  color: #000000;
+  font-family: Quicksand;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 40px 29px;
+  background-color: white;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
 }
 
 .slider-feature {
@@ -528,7 +527,7 @@
 //PRODUCTS===================================================================================================
 .products {
   background-color: $bgcolor;
-  padding-top: 120px;
+  padding: 120px 0;
   // .products__title
 
   &__title {
@@ -641,13 +640,7 @@
   &__list {
     display: flex;
     align-items: center;
-    li {
-      margin-right: 8px;
-      &:hover {
-        margin-right: 8px;
-      }
-    }
-    a {
+    button {
       color: #747b86;
       font-family: Quicksand;
       font-size: 15px;
@@ -655,7 +648,9 @@
       line-height: 30px;
       border-radius: 16px;
       background-color: #f1f3f6;
-      padding: 7px 20px;
+      padding: 0 20px;
+      margin-right: 8px;
+      border: none;
       &:hover {
         color: #ffffff;
         font-family: Quicksand;
@@ -663,8 +658,9 @@
         font-weight: 400;
         line-height: 30px;
         border-radius: 16px;
-        padding: 7px 20px;
+        padding: 0 20px;
         background-color: #0674ec;
+        margin-right: 8px;
       }
     }
   }
@@ -682,12 +678,13 @@
   &__products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0 -14px;
   }
 
   // .inner__products-column
 
   &__products-column {
+    padding: 0 14px;
   }
 
   // .inner__products-item
@@ -706,8 +703,8 @@
   &__products-img {
     min-height: 230px;
     height: 100%;
-    &:hover{
-      .inner__products-img-buttons{
+    &:hover {
+      .inner__products-img-buttons {
         opacity: 1;
         visibility: visible;
       }
@@ -861,6 +858,64 @@
       font-weight: 400;
       margin-right: 10px;
     }
+  }
+}
+
+.inner__products-all {
+  color: #ffffff;
+  font-family: Quicksand;
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 28px;
+  background-color: $blue;
+  padding: 19px 33px;
+  margin-top: 60px;
+  &:hover {
+    background-color: #2b89ee;
+  }
+}
+
+//Followers=================================================================================================
+.followers {
+  padding: 120px 0;
+  background-color: #eff1f5;
+  // .followers__title
+
+  .slick-arrow {
+    position: absolute;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0674ec;
+    padding: 24px 30px;
+    width: 8px;
+    height: 14px;
+    cursor: pointer;
+  }
+
+  .slick-prev {
+    background-image: url(../img/icon/chevron-left.png);
+    right: 90px;
+    border-radius: 23px 0 0 23px;
+  }
+
+  .slick-next {
+    background-image: url(../img/icon/chevron-right.png);
+    right: 30px;
+    border-radius: 0 23px 23px 0;
   }
 }
 

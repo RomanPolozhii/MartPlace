@@ -93,4 +93,11 @@ $(function () {
   $(".filter__product").click(function () {
     $(".filter__product,.filter__product-list").toggleClass("active");
   });
+
+  $(".followers__slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    appendArrows: $(".followers__title"),
+  });
+  var mixer = mixitup(".products__inner.inner__products");
 });
