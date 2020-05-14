@@ -995,6 +995,133 @@
     line-height: 36px;
   }
 }
+//why========================================================================================================
+.why {
+  padding: 120px 0;
+  // .why__header
+
+  &__header {
+    text-align: center;
+    width: 680px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+  }
+
+  // .why__title
+
+  &__title {
+    font-family: Quicksand;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 21px;
+    span {
+      color: $blue;
+    }
+  }
+
+  // .why__text
+
+  &__text {
+    color: $text;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  // .why__inner
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  // .why__column
+
+  &__column {
+    padding: 0 15px;
+  }
+
+  // .why__item
+
+  &__item {
+    position: relative;
+    max-width: 360px;
+    padding: 50px 30px 60px;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+  }
+  .lnr {
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .lnr-license {
+    color: $blue;
+  }
+  .lnr-magic-wand{
+    color: #7f4ec2;
+  }
+  .lnr-lock{
+    color: #77de51;
+  }
+  .lnr-chart-bars{
+    color: #feb71d;
+  }
+  .lnr-leaf{
+    color: #58c9e9;
+  }
+  .lnr-phone{
+    color: #ff6a6d;
+  }
+}
+
+.item {
+  // .item__why
+  &__why-wrapper {
+    text-align: center;
+  }
+  // .item__why-img
+
+  &__why-img {
+    margin-bottom: 41px;
+    /* Style for "license" */
+  }
+
+  // .item__why-img-number
+
+  &__why-img-number {
+    position: absolute;
+    top: 9px;
+    left: 17px;
+    opacity: 0.2;
+    color: #5c87f8;
+    font-family: Quicksand;
+    font-size: 48px;
+    font-weight: 300;
+  }
+
+  // .item__why-title
+
+  &__why-title {
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  // .item__why-text
+
+  &__why-text {
+    color: $text;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
 
 //-----------------------------------------------------------------------------------------------------------
 //
