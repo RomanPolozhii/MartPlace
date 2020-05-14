@@ -1061,19 +1061,19 @@
   .lnr-license {
     color: $blue;
   }
-  .lnr-magic-wand{
+  .lnr-magic-wand {
     color: #7f4ec2;
   }
-  .lnr-lock{
+  .lnr-lock {
     color: #77de51;
   }
-  .lnr-chart-bars{
+  .lnr-chart-bars {
     color: #feb71d;
   }
-  .lnr-leaf{
+  .lnr-leaf {
     color: #58c9e9;
   }
-  .lnr-phone{
+  .lnr-phone {
     color: #ff6a6d;
   }
 }
@@ -1120,6 +1120,81 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+  }
+}
+
+//sellbuy====================================================================================================
+.sellby {
+  // .sellby__inner
+
+  &__inner {
+    display: flex;
+  }
+
+  // .sellby__column
+
+  &__column {
+    flex: 1 1 50%;
+  }
+
+  // .sellby__item
+
+  &__item {
+    height: 100%;
+  }
+
+  // .sellby__content
+
+  &__content {
+    text-align: center;
+    padding: 100px 60px;
+  }
+
+  // .sellby__img
+
+  &__img {
+    width: 120px;
+    height: 101px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+  }
+
+  .by-img {
+    width: 100px;
+    height: 100px;
+  } // .sellby__title
+
+  &__title {
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 19px;
+  }
+
+  // .sellby__text
+
+  &__text {
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  // .sellby__link
+
+  &__link {
+    display: inline-block;
+    padding: 18px 26px;
+    color: $blue;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 28px;
+    background-color: #ffffff;
+    margin-top: 43px;
   }
 }
 

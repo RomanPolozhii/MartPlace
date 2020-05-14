@@ -99,18 +99,34 @@ $(function () {
     slidesToScroll: 1,
     appendArrows: $(".followers__title"),
   });
-var show = true;
+  var show = true;
   $(window).on("scroll", function () {
-    if(!show) return false;
+    if (!show) return false;
     var w_top = $(window).scrollTop();
     var e_top = $(".counter").offset().top;
     var w_height = $(window).height();
-    var d_height = $(document).height(); 
+    var d_height = $(document).height();
 
-    if (w_top >= e_top || w_height + w_top == d_height) {
-      $(".counter__count").spincrement({
+    if (w_top + 200 >= e_top || w_height + w_top == d_height) {
+      $(".counter__count1").spincrement({
         from: 0,
-        duration: 3000,
+        to: 38436,
+        duration: 1000,
+      });
+      $(".counter__count2").spincrement({
+        from: 0,
+        to: 3736,
+        duration: 1000,
+      });
+      $(".counter__count3").spincrement({
+        from: 0,
+        to: 2736,
+        duration: 1000,
+      });
+      $(".counter__count4").spincrement({
+        from: 0,
+        to: 25736,
+        duration: 1000,
       });
       show = false;
     }
