@@ -99,5 +99,24 @@ $(function () {
     slidesToScroll: 1,
     appendArrows: $(".followers__title"),
   });
+var show = true;
+  $(window).on("scroll", function () {
+    if(!show) return false;
+    var w_top = $(window).scrollTop();
+    var e_top = $(".counter").offset().top;
+    var w_height = $(window).height();
+    var d_height = $(document).height(); 
+
+    if (w_top >= e_top || w_height + w_top == d_height) {
+      $(".counter__count").spincrement({
+        from: 0,
+        duration: 3000,
+      });
+      show = false;
+    }
+  });
+
   var mixer = mixitup(".products__inner.inner__products");
 });
+
+new WOW().init();
