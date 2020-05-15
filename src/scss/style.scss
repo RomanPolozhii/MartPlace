@@ -1187,14 +1187,158 @@
   &__link {
     display: inline-block;
     padding: 18px 26px;
-    color: $blue;
     font-family: Quicksand;
+    color: $blue;
     font-size: 16px;
     font-weight: 400;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 28px;
     background-color: #ffffff;
     margin-top: 43px;
+  }
+}
+
+//Feedback====================================================================================================
+.feedback {
+  padding: 120px 0;
+  // .feedback__header
+
+  &__header {
+    text-align: center;
+    width: 675px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  // .feedback__title
+
+  &__title {
+    font-family: Quicksand;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 36px;
+    span {
+      color: #0674ec;
+    }
+  }
+
+  // .feedback__text
+
+  &__text {
+    color: $text;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  // .feedback__body
+
+  &__body {
+    display: flex;
+    margin: 0 -15px;
+  }
+
+  // .feedback__column
+
+  &__column {
+    padding: 0 15px;
+  }
+
+  // .feedback__item
+
+  &__item {
+  }
+}
+
+.item {
+  // .item__feedback
+
+  &__feedback {
+    position: relative;
+    max-width: 555px;
+    height: 315px;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 50px 40px;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 2px;
+      height: 100%;
+      background-color: $blue;
+      border-radius: 2px;
+    }
+  }
+
+  // .item__feedback-header
+
+  &__feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  // .item__feedback-img
+
+  &__feedback-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 19px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .item__feedback-info
+
+  &__feedback-info {
+    margin-right: auto;
+  }
+
+  // .item__feedback-name
+
+  &__feedback-name {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+
+  // .item__feedback-prof
+
+  &__feedback-prof {
+    color: $text;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  // .item__feedback-bubble
+
+  &__feedback-bubble {
+    .lnr {
+    }
+    .lnr-bubble {
+      color: #e8e8e8;
+      font-size: 60px;
+      font-weight: 400;
+    }
+  }
+
+  // .item__feedback-text
+
+  &__feedback-text {
+    color: $text;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
   }
 }
 
