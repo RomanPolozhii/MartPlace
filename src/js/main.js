@@ -104,6 +104,7 @@ $(function () {
     if (!show) return false;
     var w_top = $(window).scrollTop();
     var e_top = $(".counter").offset().top;
+    console.log(w_top);
     var w_height = $(window).height();
     var d_height = $(document).height();
 
@@ -132,7 +133,11 @@ $(function () {
     }
   });
 
+  wow = new WOW({
+    offset:1000
+  });
+  new WOW().init();
+
   var mixer = mixitup(".products__inner.inner__products");
 });
 
-new WOW().init();
